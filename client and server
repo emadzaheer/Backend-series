@@ -1,0 +1,5 @@
+phone      ------>    Server
+  OR       Express    Server
+Mobile    <-------    Server
+
+Express is used to send and receive requests such as get, post, delete, update on certain routes like /:home, /login etc.
