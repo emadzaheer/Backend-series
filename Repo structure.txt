@@ -1,0 +1,14 @@
+Folder   |  description/files
+
+Data => package.json, .env, readme, git, lint, prettier etc
+Src  => index,  : DB connects here 
+        App,     : configurations, cookies, urlencode 
+        constants :  enums, db-name
+
+DB      : code that connects with db
+Models  : Data structure/schema
+controllers: Methods/functions   //MVC : c is controller
+Routes  : urls
+Middlewares: 
+Utils    : Eg send mail, upload file etc
+ 
