@@ -4,7 +4,10 @@ const express = require('express')  //here we have made express an object, same 
 const app = express()               //we'll use express using the app variable
 const port = 4000                   //65535 ports in total in a normal pc  
 
-
+const githubInfo = {
+  "message": "Found",
+  "documentation_url": "https://docs.github.com/rest"
+}
 
 app.get('/', (req, res) => {        //listen on route '/' if someone sends get req and give res() which is hello world
   res.send('Hello World!')
@@ -20,6 +23,10 @@ app.get('/login', (req, res) => {
 
 app.get('/blockchain', (req, res) => {          //the server was running and this route gave error: said cannot get ... , to fix this simply restart.
   res.send('<h2>VANAR CHAIN</h3> ')
+})
+
+app.get('/githubInfo', (req, res) => {
+  res.json(githubInfo)
 })
 
 app.listen(process.env.PORT, () => {                                        
